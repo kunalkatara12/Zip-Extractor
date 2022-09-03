@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainDiv {
+    width: 50vw;
+    height: 60vh;
+    background-color: rgb(205, 211, 211);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#heading {
+    text-align: center;
+}
+
+#tagline {
+    width: 40vw;
+    transform: translateX(14%);
+    text-align: center;
+    text-overflow: clip;
+}
+
+#open_file_button{
+border: 0;
+    padding: 11px 43px 12px;
+    transform: translateX(280px);
+}
+
+.bootstrap .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+#open_file_button .row_1 {
+    font-size: 18px;
+}
+
+#open_file_button .row_2 {
+    font-size: 12px;
+    opacity: .6;
+    margin-top: 1px;
+}
+/* 
+.bootstrap button,
+.bootstrap input {
+    overflow: visible;
+} */
