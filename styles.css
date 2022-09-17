@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +10,23 @@
     width: 50vw;
     height: 60vh;
     background-color: rgb(205, 211, 211);
-    position: absolute;
+     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+overflow-y: scroll;
+overflow-x: scroll;
 }
 
+.file_loaded_group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+}
 #heading {
     text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 #tagline {
@@ -23,12 +34,20 @@
     transform: translateX(14%);
     text-align: center;
     text-overflow: clip;
+    font-family: 'Rubik', sans-serif;
 }
+.inptFileBtn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 #open_file_button{
 border: 0;
     padding: 11px 43px 12px;
-    transform: translateX(280px);
+    /* transform: translateX(280px); */
+    font-family: 'Rubik', sans-serif;
 }
 
 .bootstrap .btn:not(:disabled):not(.disabled) {
@@ -43,9 +62,59 @@ border: 0;
     font-size: 12px;
     opacity: .6;
     margin-top: 1px;
+    /* font-family: 'Rubik', sans-serif; */
+}
+a {
+    color: #2962ff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16.93 14.74'%3E%3Cpath d='M16.92 9.3h-5.14a.91.91 0 01-.9-.54C9.3 6.04 7.7 3.33 6.1.62 6 .45 5.91.27 5.78.01c.27 0 .45-.06.63-.06h4.55a1 1 0 01.74.36c1.7 2.83 3.36 5.67 5 8.52a3.92 3.92 0 01.22.47zM5.35.37c.78 1.32 1.45 2.6 2.26 3.78a1.73 1.73 0 010 2.18c-1.49 2.42-2.89 4.9-4.32 7.36l-.47.77a2.34 2.34 0 01-.29-.32C1.71 12.75.88 11.37.09 9.96a.84.84 0 010-.7C1.73 6.42 3.4 3.6 5.09.77c.02-.11.11-.2.26-.4zM16.93 9.84a3.17 3.17 0 01-.16.42c-.8 1.37-1.61 2.75-2.44 4.11a.8.8 0 01-.56.35H3.64a2.24 2.24 0 01-.29 0 3.91 3.91 0 01.19-.47c.79-1.36 1.57-2.73 2.39-4.07a.87.87 0 01.62-.36h10a3.2 3.2 0 01.38.02z' fill='%23000'/%3E%3C/svg%3E");
+    width: 18px;
+    height: 17px;
+    margin-bottom: -1px;
 }
 /* 
 .bootstrap button,
 .bootstrap input {
     overflow: visible;
 } */
+
+
+.cloudOpeners{
+    display: flex;
+font-size: x-small;
+height:80px;
+font-family: 'Rubik', sans-serif;
+align-items: flex-end;
+justify-content: space-around;
+}
+
+.drop_here_txt {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    color: #999;
+}
+
+
+.open_progress_group {
+    display: none;
+}
+
+.h {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family:'Rubik',
+        sans-serif;
+    }
+
+
+    p.single{
+        font-size: small;
+        font-weight: 100;
+    }
